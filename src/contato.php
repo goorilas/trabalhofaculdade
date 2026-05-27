@@ -36,7 +36,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['mensagem'])
 $result = file_get_contents($file);
 
 echo "<hr>";
-echo "<h1>Arquivo: ".$file."</h1>";
+echo "<h1>Dados</h1>";
 echo "<hr>";
 // link para voltar para a pagina inicial
 echo '<a href="/">Voltar</a>';

@@ -16,8 +16,7 @@
     <header>
         <nav class="navbar bg-dark shadow" data-bs-theme="dark">
             <div class="container d-flex flex-wrap align-items-center justify-content-between">
-                <img src="/img/logoweversonzanelatto.png" class="img-fluid" width="350"
-                    alt="Logo Weverson Zanelatto">
+                <img src="/img/logoweversonzanelatto.png" class="img-fluid" width="350" alt="Logo Weverson Zanelatto">
                 <div class="text-end">
                     <h1 class="text-light fw-bold" id="titulo-animado">
                         Bem-vindo ao meu Portfólio
@@ -55,6 +54,11 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contato" type="button">
                     Contato
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#session" type="button">
+                    Session
                 </button>
             </li>
 
@@ -204,24 +208,24 @@
                         </a>
                     </p>
                     <hr>
-                    <form action="contato.php" method="POST">
+                    <form action="contato.php" method="POST" id="contatoForm">
 
                         <div class="mb-3">
                             <label class="form-label">Nome</label>
-                            <input type="text" name="nome" class="form-control">
+                            <input type="text" name="nome" class="form-control" id="contatoNome">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control">
+                            <input type="email" name="email" class="form-control" id="contatoEmail">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Mensagem</label>
-                            <textarea name="mensagem" class="form-control"></textarea>
+                            <textarea name="mensagem" class="form-control" id="contatoMensagem"></textarea>
                         </div>
 
-                        <button class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary">
                             Enviar
                         </button>
 
@@ -230,12 +234,23 @@
                 </section>
 
             </div>
+
+            <div class="tab-pane fade" id="session">
+                <section class="mt-5 w-100">
+                    <h2 class="mb-4">
+                        Session storage
+                    </h2>
+                    <pre><app-data id="appData"></app-data></pre>
+                </section>
+
+            </div>
+
         </div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
 </body>
 
 </html>
