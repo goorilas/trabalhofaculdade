@@ -1,0 +1,9 @@
+services:
+
+  trabalho:
+    image: php:8.4-apache
+    container_name: trabalho
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
