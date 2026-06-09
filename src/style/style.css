@@ -49,6 +49,24 @@ p {
     line-height: 1.8;
 }
 
+#profile p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+
+    #profile p {
+        text-align: left;
+    }
+
+}
+
+#profile h2 {
+    border-left: 5px solid #60a5fa;
+    padding-left: 15px;
+}
+
 img {
     transition: 0.3s;
 }

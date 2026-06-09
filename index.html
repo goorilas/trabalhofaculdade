@@ -53,6 +53,14 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="projetos-tab" data-bs-toggle="tab" data-bs-target="#projetos"
+                    type="button">
+
+                    Projetos
+
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
                 <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contato" type="button">
                     Contato
                 </button>
@@ -172,6 +180,54 @@
                         </div>
 
                     </div>
+
+                </section>
+
+            </div>
+
+            <div class="tab-pane fade" id="projetos">
+
+                <section class="mt-5">
+
+                    <h2 class="mb-4">
+                        Meus Projetos
+                    </h2>
+
+                    <div id="lista-projetos"></div>
+
+                    <hr>
+
+                    <form id="formProjeto">
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Nome do Projeto
+                            </label>
+
+                            <input type="text" id="nomeProjeto" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Descrição
+                            </label>
+
+                            <textarea id="descricaoProjeto" class="form-control" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Link
+                            </label>
+
+                            <input type="url" id="linkProjeto" class="form-control" required>
+                        </div>
+
+                        <button class="btn btn-success">
+                            Adicionar Projeto
+                        </button>
+
+                    </form>
 
                 </section>
 
